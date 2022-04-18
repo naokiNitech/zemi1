@@ -15,9 +15,8 @@ Sinx=[float(t)for t in sinx]
 Siny=[float(t_1)for t_1 in siny]
 
 
-plt.figure()
-plt.plot(Sinx,Siny)
-plt.show()
+
+
 
 with open('coswave1.csv','r')as f_1:
     reader_1=csv.reader(f_1)
@@ -30,9 +29,12 @@ cosy=[C[1]for C in L_1]
 Cosx=[float(c)for c in cosx]
 Cosy=[float(c_1)for c_1 in cosy]
 
+fig=plt.figure()
+ax1=fig.add_subplot(2,1,1)
+ax2=fig.add_subplot(2,1,2)
 
-plt.figure()
-plt.plot(Cosx,Cosy)
+ax1.plot(Sinx,Siny)
+ax2.plot(Cosx,Cosy)
 plt.show()
 
 
