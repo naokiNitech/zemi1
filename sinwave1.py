@@ -1,23 +1,25 @@
 import numpy as np
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
-# f=5
-# x=np.linspace(0,5,1000)
-# y=np.sin(1*np.pi*x*f)
-
-# plt.figure()
-# plt.plot(x,y)
-# plt.show()
-
-import csv
-freq=5
+f=5
 x=np.linspace(0,5,1000)
-y=np.sin(1*np.pi*x*freq)
+y=np.sin(1*np.pi*x*f)
 
-data = np.c_[x,y]
+print(x)
+
+plt.figure()
+plt.plot(x,y)
+plt.show()
+
+# import csv
+# freq=5
+# x=np.linspace(0,5,1000)
+# y=np.sin(1*np.pi*x*freq)
+
+# data = np.c_[x,y]
     
-# X=x.T
-# Y=y.T
+
+
      
 
 
@@ -28,4 +30,4 @@ data = np.c_[x,y]
 
 #  f.close
 
-np.savetxt('sinwave1.csv',data,delimiter=',')
+# np.savetxt('sinwave1.csv',data,delimiter=',')
